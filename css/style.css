@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Mon", sans-serif;
   overflow-x: hidden;
 }
 /*navbar*/
@@ -31,12 +31,12 @@ nav .logo {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: rgb(254, 250, 250);
   font-size: 0.9rem;
 }
 
 nav ul li a:hover {
-  color: teal;
+  color: rgb(190, 231, 12);
 }
   /* hamburger menu */
   .menu-toggle{
@@ -102,7 +102,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
 
-    border: 2px solid blue;
+    border: 2px solid rgb(216, 211, 61);
     padding: 8px;
     border-radius: 5px;
     margin: 0 auto;
