@@ -8,6 +8,13 @@ body {
   background-color: #f0f0f0; /* Set background color for the whole page */
 }
 /*navbar*/
+
+@keyframes colorShift {
+  0% { background-color: rgb(121, 149, 240); } /* Start color */
+  50% { background-color: rgb(106, 134, 218); } /* Mid color */
+  100% { background-color: rgb(93, 117, 198); } /* End color */
+}
+
 nav {
   display: flex;
   background-color: rgb(114, 141, 231);
@@ -17,6 +24,7 @@ nav {
   height: 90px;
   align-items: center;
   color: rgb(218, 237, 245);
+  animation: colorShift 2.5s infinite alternate;
 }
 nav ul {
   display: flex;
@@ -91,9 +99,9 @@ nav ul li a:hover {
 
   .image {
    
-    width: 60%;
+    width: 70%;
     height: auto;  
-    max-width: 100px;
+    max-width: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -142,7 +150,7 @@ footer {
 h2 {
   
     text-align: center;
-    color: brown;
+    color: rgb(100, 111, 206);
     text-justify: inter-word;
     word-wrap: break-word;
 
