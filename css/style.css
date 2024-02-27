@@ -3,19 +3,20 @@
   padding: 0;
 }
 body {
-  font-family: "Mon", sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+  background-color: #f0f0f0; /* Set background color for the whole page */
 }
 /*navbar*/
 nav {
   display: flex;
-  background-color: coral;
+  background-color: rgb(114, 141, 231);
   justify-content: space-around;
   /* padding: 20px 0; atas bawah 20  kiri kanan 0 */
   /* atur padding dengan flex */
-  height: 45px;
+  height: 90px;
   align-items: center;
-  color: whitesmoke;
+  color: rgb(218, 237, 245);
 }
 nav ul {
   display: flex;
@@ -25,18 +26,18 @@ nav ul {
   transition: all 0.4s;
 }
 nav .logo {
-  font-family: "Srisakdi", cursive;
+  font-family: "Calibri", cursive;
   letter-spacing: 3px; /*space antar char*/
 }
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(254, 250, 250);
+  color: white;
   font-size: 0.9rem;
 }
 
 nav ul li a:hover {
-  color: rgb(190, 231, 12);
+  color: rgb(4, 18, 18);
 }
   /* hamburger menu */
   .menu-toggle{
@@ -58,7 +59,7 @@ nav ul li a:hover {
  }
  .menu-toggle span{
      display: block;
-     width: 21px;
+     width: 20px;
      height: 2px;
      background-color: whitesmoke;
      border-radius: 3px;
@@ -90,26 +91,31 @@ nav ul li a:hover {
 
   .image {
    
-    width: 100%;
+    width: 60%;
     height: auto;  
-    max-width: 140px;
+    max-width: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-
-    border: 2px solid rgb(216, 211, 61);
-    padding: 8px;
-    border-radius: 5px;
-    margin: 0 auto;
-
+  width: 70%; /* Set the width to 70% of the viewport width */
+  max-width: 1150px; /* Set a maximum width to ensure it doesn't exceed a certain size */
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  border: 4px solid rgb(6, 120, 251);
+  padding: 2px;
+  border-radius: 20px;
+  margin: 30px auto; 
+  background-color: #cce2f8; 
+  box-shadow: 3px 3px 3px;
 }
+
 main {
-    display: flex;
+    display: venter;
     flex-direction: row;
 }
 
@@ -122,12 +128,17 @@ main {
 .flexone{
 flex-grow: 1;
 }
+
+
 .flextwo{
     flex-grow: 2;
     }
+
+
 footer {
     text-align: center;
 }
+
 h2 {
   
     text-align: center;
@@ -143,7 +154,7 @@ h5 {
  
 }
 p {
-    text-align: justify;
+    text-align: center;
     text-justify: inter-word;
 }
 @media screen and (max-width: 768px) {
