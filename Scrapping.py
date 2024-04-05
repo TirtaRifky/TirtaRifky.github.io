@@ -14,6 +14,7 @@ from bs4 import BeautifulSoup
 import json
 from datetime import datetime
 from requests.exceptions import HTTPError
+import subprocess
 
 def get_content(url):
     try:
@@ -97,8 +98,26 @@ def save_to_json(data):
     else:
         print("Data tidak ditemukan.")
 
+def commit_and_push_changes():
+    try:
+        # Add changes to the staging area
+        subprocess.run(["git", "add", "."], check=True)
+        
+        # Commit the changes
+        subprocess.run(["git", "commit", "-m", "Update scraping data"], check=True)
+        
+        # Push the changes to the remote repository
+        subprocess.run(["git", "push"], check=True)
+        
+        print("Changes have been committed and pushed to the remote repository.")
+    except subprocess.CalledProcessError as e:
+        print("Error:", e)
+
 # Perform scraping
 scraped_data = scrape_web()
 
 # Save data to JSON if scraping was successful
 save_to_json(scraped_data)
+
+# Commit dan push changes ke GitHub
+commit_and_push_changes()
