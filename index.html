@@ -7,6 +7,8 @@
     <title>Web Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Srisakdi&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="WebScrapper.js"></script>
 </head>
 
 <body>
@@ -24,6 +26,7 @@
                 <li><a href="#Gallery">Gallery</a></li>
                 <li><a href="#Video">Video</a></li>
                 <li><a href="#Map">Map</a></li>
+                <li><a href="#WebScrapper">Web Scrapping 1</a></li>
             </ul>
             <div class="menu-toggle">
                 <input type="checkbox">
@@ -157,6 +160,23 @@
             <aside class="box flexone">
                 <p><iframe src="https://www.google.com/maps/d/embed?mid=1Gt4HhDOHGEOTsp_lWnCzBF23fVU&hl=en_US&ehbc=2E312F"
                         ></iframe></p>
+            </aside>
+        </main>
+        <footer class="box">
+        </footer>
+    </div>
+
+    <!-- Web Scrapper -->
+    <div class="container">
+        <main>
+            <div class="box flextwo">
+                <article>
+                    <h2 id="WebScrapper">BERITA TERKINI</h2>
+                    <br>
+                </article>
+            </div>
+            <aside class="box flexone">
+                <div id="scrapped_json"></div>
             </aside>
         </main>
         <footer class="box">

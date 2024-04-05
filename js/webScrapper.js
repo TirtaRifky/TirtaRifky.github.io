@@ -1,11 +1,3 @@
- const mntoggle = document.querySelector('.menu-toggle input');
- const nav = document.querySelector('nav ul');
-
-mntoggle.addEventListener('click',function(){
-    nav.classList.toggle('menushow');
-})
-
-
 $(function(){
     //Mengambil data dari file Scrapped.json menggunakan fungsi $.getJSON() JQuery
     $.get('Scrapped.json',function(obj){
